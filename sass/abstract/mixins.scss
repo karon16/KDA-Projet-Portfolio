@@ -1,0 +1,6 @@
+@mixin buttonColors(){
+    background-color : $greyColor;
+    color: $blueColor;
+    border: 2px solid $blueColor ;
+    box-shadow: 5px 5px 0px 0px  $pinkColor;
+}

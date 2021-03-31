@@ -1,14 +1,10 @@
 .btn:link,
 .btn:visited{
-    background-color : white;
-    color: #0099CD;
-    border: 2px solid #0099CD ;
+    @include buttonColors;
     padding: 1rem 2rem;
     position: relative;
     font-weight: bold;
-    font-size: 1.5rem;
-    box-shadow: 5px 5px 0px 0px  #E43583;
-    
+    font-size: 1.5rem; 
 }
 /*.btn::after{
     content: '';

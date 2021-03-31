@@ -1,9 +1,15 @@
 *,*::after, *::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: $body-margin;
+    padding: $body-padding;
+    box-sizing: $body-box-sizing;
 }
 
 html{
     font-size: 62.5%;
+}
+
+.main-page--reset{
+    width: $sizeMain ;
+    margin: $marginTopBottomMain $marginRight;
+
 }
