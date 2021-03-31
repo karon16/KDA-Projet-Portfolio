@@ -1,0 +1,57 @@
+/*variables d'initialisation*/
+/* variables du main*/
+/*varaiables tailles en px*/
+/*variables couleurs*/
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: white;
+  color: #0099CD;
+  border: 2px solid #0099CD;
+  padding: 1rem 2rem;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 0px 0px #E43583;
+}
+
+/*.btn::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background : #E43583 ;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: -1;
+
+}
+
+.btn:hover{
+    background-color: #E43583;
+    border: 2px solid #E43583;
+    color: #fff;
+}*/
+.main-page--reset {
+  width: 90vw;
+  margin: auto;
+}
+
+.header--padding {
+  padding: 30px 0;
+}
+
+link {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

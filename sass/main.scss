@@ -1,0 +1,27 @@
+@import '../sass/abstract/variables.scss';
+@import '../sass/abstract/mixins.scss';
+@import '../sass/base/reset.scss';
+@import '../sass/base/typography.scss';
+@import '../sass/component/button.scss';
+
+
+
+
+
+
+
+.main-page--reset{
+    width: $sizeMain ;
+    margin: $marginMain;
+}
+
+.header--padding{
+    
+    padding: 30px 0;
+}
+
+
+
+link{
+    display: inline-block;
+}
