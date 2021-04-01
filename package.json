@@ -1,5 +1,8 @@
 {
     "scripts": {
-        "compile:sass" : "sass sass/main.scss style/style.css --watch"
+        "compile:sass": "sass sass/main.scss style/style.css --watch"
+    },
+    "dependencies": {
+        "live-server": "^1.2.1"
     }
 }

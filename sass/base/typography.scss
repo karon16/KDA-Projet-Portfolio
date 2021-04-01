@@ -1,0 +1,36 @@
+.titles--font-family{
+    font-family: $titles;
+}
+
+.paragraphs-font-family{
+    font-family: $paragraphs;
+}
+.titles--font-color{
+    color: $pinkColor;
+}
+.title--second-color{
+    color: $blackColor;
+}
+.paragraphs--color{
+    color: $blackColor;
+}
+.titles--font-size{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.paragraphs--font-size{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.description__paragraph--size{
+    border-top: 2px solid $blueColor;
+    width: 70%;
+    padding-top: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Roboto;
+    margin: 20px 0px 50px 0;
+}
+

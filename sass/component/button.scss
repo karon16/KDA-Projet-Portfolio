@@ -4,22 +4,32 @@
     padding: 1rem 2rem;
     position: relative;
     font-weight: bold;
-    font-size: 1.5rem; 
-}
-/*.btn::after{
-    content: '';
-    height: 100%;
-    width: 100%;
-    background : #E43583 ;
-    position: absolute;
-    top: .5rem;
-    left: .5rem;
-    z-index: -1;
-        
+    font-size: 1.3rem !important; 
 }
 
 .btn:hover{
     background-color: #E43583;
     border: 2px solid #E43583;
     color: #fff;
-}*/
+    box-shadow: 5px 5px 0px 0px  $blueColor;
+    transition: 0.2s;
+}
+
+.btn-nav:link,
+.btn-nav:visited{
+    @include buttonColors;
+    padding: 0.7rem 1.6rem;
+    position: relative;
+    font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-family: Roboto ;
+}
+
+.btn-nav:hover{
+    background-color: #E43583;
+    border: 2px solid #E43583;
+    color: #fff;
+    box-shadow: 5px 5px 0px 0px  $blueColor;
+    transition: 0.2s;
+}

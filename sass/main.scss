@@ -4,25 +4,36 @@
 @import '../sass/base/typography.scss';
 @import '../sass/component/button.scss';
 
-.border{
-    border: 1px solid black;
-}
+
 .head{
+    width: $sizeMain !important;
+    margin: $marginTopBottomMain $marginRight !important;
     &--padding{
         padding: 30px 0;
+    }
+    .menu--shadow{
+        box-shadow: 0px 2px 10px -10px black !important;
     }
     .logo__image--size{
         width: 12rem ;
         max-width: 100%;
     }
-    .link{
+    .nav-link{
         display: flex !important;
-        justify-content: space-between !important;
-        
+        justify-content: space-evenly !important;
         align-items: center;
     }
-    .link--color{
+    .link--color:visited,
+    .link-color:link{
         color: #3C3C3B;
+    }
+    .link--color:hover::after{
+        content: '';
+        width: 100%;
+        height: .5rem;
+        @include linkColors;
+        display: block;
+        transition: 3s;
     }
     .link--size{
         
@@ -41,23 +52,58 @@
     .ui.menu {
         border-bottom: 0 none !important;
         box-shadow: none;
+       
     }
+    .text-head--size{
+        font-size: 6.4rem;
+        font-family: Roboto;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: normal;
+        margin: 0;
+
+    } 
+    .description__image--size{
+        width: 100%;
+        
+    }
+
+
+    .border{
+        border: 1px solid black !important;
+    }
+
+}
+
+.body-section--paddings{
+    padding: 50px 0 !important;
+    background: #FEFBFD;
+}
+
+.about{
+    &__container{
+        width: $sizeMain !important;
+        margin: $marginTopBottomMain $marginRight !important;
     
+    }
+    // &__title{
+    //     text-align: center;
+    // }
+    &__photo{
+        width : 100%;
+        box-shadow: 5px 5px 0px 0px  $pinkColor;
+    }
 }
 
 
 
-
-
-
-
-@media only screen and (max-width: 700px) {
-    .btn--hidden{
-        display: none;
-    }  
-}
 @media only screen and (max-width: 768px) {
-    .animated__image{
-        display: none;
-    }  
-}
+    .image--size{
+       width: 90%;
+       margin: 0;
+    }
+    .text-head--size{
+        font-size: 1rem;
+    }
+
+  }

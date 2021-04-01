@@ -10,35 +10,58 @@
     <title>Chris Le Designer</title>
 </head>
 <body>
-    <main class="main-page main-page--reset">
+    <main class="main-page main-page--reset main-page--background border">
         <header class="ui grid head head--padding">
-            <nav class=" ui grid fixed menu navigation ">
-                <div class="row">
-                <div class="four wide  column left floated left aligned navigation__logo ">
+            <nav id="navigation" class="ui row fixed menu ">
+    
+                <div class="three wide  column left floated center aligned navigation__logo ">
                     <img src="img/logo-min.png" alt="" class="logo__image logo__image--size " >
                 </div>
-                <div class="twelve wide mobile ten wide tablet eight wide computer column right floated right aligned middle aligned navigation__menu">
-                    <div class="link">
-                        <a href="" class=" link--color link--size">Acueill</a>
-                        <a href="" class=" link--color link--size">A propos</a>
-                        <a href="" class=" link--color link--size">Compétences</a>
-                        <a href="" class=" link--color link--size">Services</a>
-                        <a href="" class="btn btn--hidden btn--color">Contacts</a>
+                <div class="tablet computer only ten wide tablet eight wide computer column right floated right aligned middle aligned navigation__menu ">
+                    <div class="nav-link">
+                        <a href="" class="link--color link--size" active>Acueill</a>
+                        <a href="" class="link--color link--size">A propos</a>
+                        <a href="" class="link--color link--size">Compétences</a>
+                        <a href="" class="link--color link--size">Services</a>
+                        <a href="" class="btn-nav btn-nav--hidden btn-nav--color ">CONTACTER</a>
                     </div>
                 </div>
                 </div>
             </nav>
             <div class="hero-section  row stackable ">
-                <div class="eight wide column middle aligned hero-section__text ">
-                    <p>je suis <br> votre</p>
-                    <div><img src="img/Group 34.png" alt=""></div>
-                    <p>Designer Graphique, Devloppeur Web, Graphiste <br> Web, UX/UI Designer</p>
+                <div class="eight wide column middle aligned hero-section__descritpion">
+                    <p class=" description__text-head text-head--size paragraphs--color">je suis <br> votre</p>
+                    <div class="description__image description__image--size"><img src="img/Group 34.png" class="image--size" alt=""></div>
+                    <h1 class="description__paragraph description__paragraph--size paragraphs--color paragraphs-font-family">Designer Graphiste, Devloppeur Web, Graphiste Web, UX/UI Designer</h1>
                     <a href="" class="btn btn--color">DEMANDER UN DEVIS</a>
                 </div>
-                <div class="eight wide column middle aligned hero-section__image "><object type="image/svg+xml" data="img/Group 2 (2).svg" class="animated__image"></object></div>
+                <div class="eight wide column middle aligned tablet computer only hero-section__image "><object type="image/svg+xml" data="./img/Design tools2.svg" class="animated__image"></object></div>
             </div>
         </header>
-        <p>je suis malade</p>
+
+        
+        <section class="about body-section  body-section--paddings ">
+            <h2 class=" about__title titles--font-family titles--font-color titles--font-size">à propos <span class="title--second-color">de moi</span> </h2>
+            <div class="about__container">
+            <div class="ui relaxed stackable grid">
+                <div class="five wide column about__profile">
+                    <div ><img src="./img/moi.jpg" alt="" class="about__photo"></div>
+                </div>
+                <div class="ten wide column  border about__biography">
+                    <p class="paragraphs--font-size">Hey, Je suis Christopher BUHENDWA</p>
+                    <p class="paragraphs--font-size">Je suis développeur web, désigner graphiste
+                        et UX/UI désigner. Je suis une personne travailleuse désirant
+                        contamment appliquer les compétences et connaisannces que j'ai apprise.
+                        Je crois en la ponctualité, à l'honetété et à la qualité du travail que je fourni.
+                        Je suis étudiant à la Kinshasa Digital Academy; j'ai travaillé avec plusieurs différents clients et je suis
+                        toujours en recherhce d'experience afin de travailler à mon maximum.
+                    </p>
+                    <a href="" class="btn btn--hidden btn--color ">VOIR MON CV</a>
+                </div>
+            </div>
+        </div>
+        </section>
     </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>
