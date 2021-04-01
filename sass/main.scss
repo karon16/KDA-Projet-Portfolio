@@ -15,69 +15,57 @@
         box-shadow: 0px 2px 10px -10px black !important;
     }
     .logo__image--size{
-        width: 12rem ;
+        width: 120px ;
         max-width: 100%;
     }
-    .nav-link{
+    .link-nav{
         display: flex !important;
         justify-content: space-evenly !important;
         align-items: center;
+
+        &--color:visited,
+        &--color:link{
+            color: #3C3C3B;
+        }
+        &--color:hover::after{
+            content: '';
+            width: 100%;
+            height: .5rem;
+            @include linkColors;
+            display: block;
+            transition: 3s !important;
+        }
+        &--size{
+            
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-family: Roboto ;
+        }
     }
-    .link--color:visited,
-    .link-color:link{
-        color: #3C3C3B;
-    }
-    .link--color:hover::after{
-        content: '';
-        width: 100%;
-        height: .5rem;
-        @include linkColors;
-        display: block;
-        transition: 3s;
-    }
-    .link--size{
-        
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        font-weight: bolder;
-        font-family: Roboto ;
-    }
+    
     .hero-section{
         padding: 100px auto !important;
-        margin-top: 65px;
-    }
-    .hero-section__text, .hero-section__image{
-        height: auto;
-    }
-    .ui.menu {
-        border-bottom: 0 none !important;
-        box-shadow: none;
-       
-    }
-    .text-head--size{
-        font-size: 6.4rem;
-        font-family: Roboto;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: normal;
-        margin: 0;
+        margin-top: 7%;
 
-    } 
-    .description__image--size{
-        width: 100%;
-        
+        &__text, &__image{
+            height: auto;
+        }
+        .ui.menu {
+            border-bottom: 0 none !important;
+            box-shadow: none;
+        }
+        .text-head--size{
+            font-size: 6.4rem;
+            font-family: Roboto;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: normal;
+            margin: 0;
+    
+        } 
     }
-
-
-    .border{
-        border: 1px solid black !important;
-    }
-
-}
-
-.body-section--paddings{
-    padding: 50px 0 !important;
-    background: #FEFBFD;
+    
 }
 
 .about{
@@ -86,12 +74,17 @@
         margin: $marginTopBottomMain $marginRight !important;
     
     }
-    // &__title{
-    //     text-align: center;
-    // }
     &__photo{
         width : 100%;
         box-shadow: 5px 5px 0px 0px  $pinkColor;
+    }
+    .description__image--size{
+        width: 100%;
+        
+    }
+    .body-section--paddings{
+        padding: 50px 0 !important;
+        background: #FEFBFD;
     }
 }
 
@@ -99,11 +92,10 @@
 
 @media only screen and (max-width: 768px) {
     .image--size{
-       width: 90%;
-       margin: 0;
+        width: 90%;
+        margin: 0;
     }
     .text-head--size{
         font-size: 1rem;
     }
-
-  }
+}

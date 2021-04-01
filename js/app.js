@@ -1,3 +1,6 @@
+$('.ui.dropdown')
+   .dropdown();
+   
 const navMenu = document.getElementById('navigation');
 
 window.onscroll = function(){
