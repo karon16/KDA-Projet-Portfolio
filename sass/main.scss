@@ -68,6 +68,12 @@
     
 }
 
+
+
+.body-section--paddings{
+    padding: 50px 0 !important;
+    background: #FEFBFD;
+}
 .about{
     &__container{
         width: $sizeMain !important;
@@ -79,15 +85,42 @@
         box-shadow: 5px 5px 0px 0px  $pinkColor;
     }
     .description__image--size{
-        width: 100%;
-        
+        width: 100%;  
     }
-    .body-section--paddings{
-        padding: 50px 0 !important;
-        background: #FEFBFD;
+    .biography__greetings-size{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .biography__paragrph--text{
+        text-align: justify;
+    }
+    .biography__paragrph--margin{
+        margin-bottom: 3%;
+    }
+    .about__contacts{
+        margin-bottom: 5%;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.border{
+    border: 1px solid black;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -98,4 +131,5 @@
     .text-head--size{
         font-size: 1rem;
     }
+
 }

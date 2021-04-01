@@ -1,12 +1,12 @@
 @mixin buttonColors(){
-    background-color : $greyColor;
+    background-color : #fff;
     color: $blueColor;
     border: 2px solid $blueColor ;
     box-shadow: 5px 5px 0px 0px  $pinkColor;
 }
 
 @mixin linkColors(){
-    background-color : $greyColor;
+    background-color : #fff;
     color: $blueColor;
     border: .5px solid $blueColor ;
     box-shadow: 2px 2px 0px 0px  $pinkColor;
