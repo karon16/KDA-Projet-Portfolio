@@ -11,18 +11,18 @@
 </head>
 <body>
     <main class="main-page main-page--reset main-page--background ">
-        <header class="ui grid head head--padding">
+        <header id = "home" class="ui grid head head--padding">
             <nav id="navigation" class="ui row fixed menu tablet computer only navigation">
                 <div class="three wide  column left floated center aligned navigation__logo ">
                     <img src="img/logo-min.png" alt="" class="logo__image logo__image--size " >
                 </div>
                 <div class=" ten wide tablet eight wide computer column right floated right aligned middle aligned navigation__menu ">
                     <div class="link-nav">
-                        <a href="" class="link-nav--color link-nav--size " >Acueill</a>
-                        <a href="" class=" link-nav--color link-nav--size">A propos</a>
-                        <a href="" class=" link-nav--color link-nav--size">Compétences</a>
-                        <a href="" class=" link-nav--color link-nav--size">Services</a>
-                        <a href="" class=" btn-nav btn-nav--hidden btn-nav--color ">CONTACTER</a>
+                        <a href="#home" class="link-nav--color link-nav--size " >Acueill</a>
+                        <a href="#about" class=" link-nav--color link-nav--size">A propos</a>
+                        <a href="#skills" class=" link-nav--color link-nav--size">Compétences</a>
+                        <a href="#services" class=" link-nav--color link-nav--size">Services</a>
+                        <a href="#contacts" class=" btn-nav btn-nav--hidden btn-nav--color ">CONTACTER</a>
                     </div>
                 </div>
                 </div>
@@ -58,7 +58,7 @@
         </div>
         </header>
 
-        <section class="about body-section  body-section--paddings ">
+        <section id = "about" class="about body-section  body-section--paddings ">
             <h2 class=" about__title titles--font-family titles--font-color titles--font-size">à propos <span class="title--second-color">de moi</span> </h2>
             <div class="about__container">
                 <div class="ui relaxed fluid stackable grid">
@@ -96,10 +96,94 @@
             </div>
         </section>
 
-        <section class="skills body-section  body-section--paddings border">
+        <section id = "skills" class="skills body-section  body-section--paddings">
             <h2 class="titles--font-family titles--font-color titles--font-size"><span class="title--second-color">Mes</span> compétences</h2>
-            <div class="skills__container">
+            <div class="section__container">
+                <div class="ui relaxed fluid stackable grid">
+                    <div class="eight wide column">
+                        <div class="skills__card skills__card--color">
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">HTML</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="90" max="100"> 90% </progress>
+                            </div>
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">CSS</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="80" max="100"> 80% </progress>
+                            </div>
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">JAVASCRIPT</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="65" max="100"> 65% </progress>
+                            </div>
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">SASS</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="75" max="100"> 75% </progress>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="skills__card skills__card--color">
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">ADOBE XD</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="65" max="100"> 65% </progress>
+                            </div>
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">ADOBE PHOTOSHOP</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="70" max="100"> 70% </progress>
+                            </div>
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">ADOBE ILLUSTRATOR</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="50" max="100"> 50% </progress>
+                            </div>
+                            <div>
+                                <label class="skills__name skills__name--size" for="file">FIGMA</label> <br>
+                                <progress class="progress__bar progress__bar--settings" id="file" value="65" max="100"> 65% </progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="specialisation body-section  body-section--paddings specialisation--backgroundcolor">
+            <h2 class="titles--font-family titles--font-color titles--font-size"><span class="title--third-color">Mes</span> spécialisations</h2>
+            <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="5rem" height="2rem" x="0" y="0" viewBox="0 0 42 42" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
+<rect xmlns="http://www.w3.org/2000/svg" y="0" width="5rem" height="1rem" fill="#e43583" data-original="#000000" style="" class=""/>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+</g></svg>
+
+            <div class="section__container">
+                <div class="ui grid">
+                    <div class="doubling three column row">
+                        <div class="column">
+                            <div class="specialisation__card specialisation__card--color specialisation__card--size">
+                                <h3 class="third__title--size">Front-end & Back-end</h3>
+                                <p class="paragraphs-font-family paragraphs--font-size">
+                                    Diplomé de la Kinshasa Digital Academy en Développement d'application
+                                    web et web mobile.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="specialisation__card specialisation__card--color specialisation__card--size">
+                                <h3 class="third__title--size paragraphs--font-size">Désign Graphique</h3>
+                                <p class="paragraphs-font-family paragraphs--font-size">Je suis un self-taught désigner graphiste depuis 2017 et
+                                    j'ai eu a travaillé avec différent grande boîte. et entreprises.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="specialisation__card specialisation__card--color specialisation__card--size">
+                                <h3 class="third__title--size">Désign UX/UI</h3>
+                                <p class="paragraphs-font-family paragraphs--font-size">Diplomé en UX et UI design du micro-master de l'université de HEC Montréal sur
+                                    Edx.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
     </main>

@@ -5,6 +5,17 @@
 @import '../sass/component/button.scss';
 
 
+
+.body-section--paddings{
+    padding: 50px 0 !important;
+    background: #FEFBFD;
+    border: 1px solid black;
+}
+.section__container{
+    width: $sizeMain !important;
+    margin: $marginTopBottomMain $marginRight !important;
+}
+
 .head{
     width: $sizeMain !important;
     margin: $marginTopBottomMain $marginRight !important;
@@ -70,10 +81,7 @@
 
 
 
-.body-section--paddings{
-    padding: 50px 0 !important;
-    background: #FEFBFD;
-}
+
 .about{
     &__container{
         width: $sizeMain !important;
@@ -102,6 +110,55 @@
         margin-bottom: 5%;
     }
 }
+
+.skills{
+    background: $greyColor;
+    &__card--color{
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0px 0px 10px -8px black;
+        margin-top: 10px;
+    }
+    &__card--color div{
+        margin: 15px 0;
+    }
+    .skills__name--size{
+        font-weight: bold;
+    }
+    .progress__bar--settings{
+        background-color: #BFE5F3;
+        height: 0.6rem;
+        width: 100%;
+    }
+    
+    .progress__bar--settings::-webkit-progress-bar {
+        background-color : #BFE5F3 ;
+    }
+    .progress__bar--settings::-webkit-progress-value {
+        background-color : $pinkColor;
+    }
+    .progress__bar--settings::-moz-progress-bar{
+        background-color: #BFE5F3;
+    }
+    
+}
+
+.specialisation--backgroundcolor{
+    background-color: $blackColorBackground ;
+}
+.specialisation{
+    &__card--color{
+        background-color: $pinkColor;
+        color: #fff;
+        box-shadow: 3px 3px 0px 0px  $blueColor;
+    }
+    &__card--size{
+        height: 100%;
+        padding: 20px 20px;
+    }
+    
+}
+
 
 
 

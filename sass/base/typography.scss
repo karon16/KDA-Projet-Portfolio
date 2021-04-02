@@ -11,6 +11,9 @@
 .title--second-color{
     color: $blackColor;
 }
+.title--third-color{
+    color: $greyColor;
+}
 .paragraphs--color{
     color: $blackColor;
 }
@@ -19,6 +22,7 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 30px;
 }
 .paragraphs--font-size{
     font-size: 1.5rem;
@@ -35,4 +39,9 @@
 }
 .bold-text--color{
     color: $pinkColor;
+}
+.third__title--size{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
 }

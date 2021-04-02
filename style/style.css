@@ -29,6 +29,10 @@ html {
   color: #3C3C3B;
 }
 
+.title--third-color {
+  color: #FDFDFD;
+}
+
 .paragraphs--color {
   color: #3C3C3B;
 }
@@ -38,6 +42,7 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .paragraphs--font-size {
@@ -57,6 +62,12 @@ html {
 
 .bold-text--color {
   color: #E43583;
+}
+
+.third__title--size {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .btn:link,
@@ -99,6 +110,17 @@ html {
   color: #fff;
   box-shadow: 5px 5px 0px 0px #0099CD;
   transition: 0.2s;
+}
+
+.body-section--paddings {
+  padding: 50px 0 !important;
+  background: #FEFBFD;
+  border: 1px solid black;
+}
+
+.section__container {
+  width: 85vw !important;
+  margin: 20px auto !important;
 }
 
 .head {
@@ -160,11 +182,6 @@ html {
   margin: 0;
 }
 
-.body-section--paddings {
-  padding: 50px 0 !important;
-  background: #FEFBFD;
-}
-
 .about__container {
   width: 85vw !important;
   margin: 20px auto !important;
@@ -189,6 +206,50 @@ html {
 }
 .about .about__contacts {
   margin-bottom: 5%;
+}
+
+.skills {
+  background: #FDFDFD;
+}
+.skills__card--color {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px -8px black;
+  margin-top: 10px;
+}
+.skills__card--color div {
+  margin: 15px 0;
+}
+.skills .skills__name--size {
+  font-weight: bold;
+}
+.skills .progress__bar--settings {
+  background-color: #BFE5F3;
+  height: 0.6rem;
+  width: 100%;
+}
+.skills .progress__bar--settings::-webkit-progress-bar {
+  background-color: #BFE5F3;
+}
+.skills .progress__bar--settings::-webkit-progress-value {
+  background-color: #E43583;
+}
+.skills .progress__bar--settings::-moz-progress-bar {
+  background-color: #BFE5F3;
+}
+
+.specialisation--backgroundcolor {
+  background-color: #282828;
+}
+
+.specialisation__card--color {
+  background-color: #E43583;
+  color: #fff;
+  box-shadow: 3px 3px 0px 0px #0099CD;
+}
+.specialisation__card--size {
+  height: 100%;
+  padding: 20px 20px;
 }
 
 .border {
