@@ -7,3 +7,4 @@ window.onscroll = function(){
     navMenu.classList.add('menu--shadow');
     console.log(navMenu.classList);
 }
+
