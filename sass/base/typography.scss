@@ -1,3 +1,4 @@
+
 .titles--font-family{
     font-family: $titles;
 }
@@ -17,6 +18,9 @@
 .paragraphs--color{
     color: $blackColor;
 }
+.paragraphs--font-family{
+    font-family: $paragraphs;
+}
 .titles--font-size{
     font-size: 3rem;
     text-transform: uppercase;
@@ -34,7 +38,6 @@
     padding-top: 5px;
     font-size: 2rem;
     font-weight: 400;
-    font-family: Roboto;
     margin: 20px 0px 50px 0;
 }
 .bold-text--color{
@@ -44,4 +47,7 @@
     font-size: 2rem;
     font-weight: bolder;
     text-transform: uppercase;
+}
+.label--font-family{
+    font-family: $paragraphs;
 }
