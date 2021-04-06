@@ -7,7 +7,7 @@ $body-box-sizing : border-box;
 /* variables du main*/
 $sizeMain : 80vw;
 $marginRight : auto;
-$marginTopBottomMain : 20px;
+$marginTopBottomMain : 50px;
 /*varaiables tailles en px*/
 
 /*variables couleurs*/
@@ -16,6 +16,8 @@ $greyColor :#FDFDFD;
 $pinkColor : #E43583; 
 $blackColor : #3C3C3B;
 $blackColorBackground : #282828;
+$backgroundGreyColor : rgb(255, 212, 248);
 /*variables for fonts*/
 $titles : 'Roboto', sans-serif;
 $paragraphs :'Lato', sans-serif;
+$fontWeight : bold;

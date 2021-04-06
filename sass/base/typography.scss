@@ -30,7 +30,7 @@
 }
 .paragraphs--font-size{
     font-size: 1.7rem;
-    text-align: left;
+
 }
 .description__paragraph--size{
     border-top: 2px solid $blueColor;
@@ -51,3 +51,37 @@
 .label--font-family{
     font-family: $paragraphs;
 }
+
+.bold--text{
+    font-weight: $fontWeight;
+    font-size: 2rem;
+}
+.icon--font-color{
+    color: $pinkColor;
+}
+
+.titles--underline::after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 0.5rem;
+    background-color: $pinkColor;
+    display: block ;
+    margin: 0px 47%;
+    margin-top: 5px;
+}
+
+.titles--underline-white::after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 0.5rem;
+    background-color: white;
+    display: block ;
+    margin: 0px 47%;
+    margin-top: 5px;
+}
+.title--black{
+    color: rgba(0, 0, 0, 0.952);
+}
+

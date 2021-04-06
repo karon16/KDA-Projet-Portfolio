@@ -5,9 +5,23 @@
     box-shadow: 5px 5px 0px 0px  $pinkColor;
 }
 
-@mixin linkColors(){
+@mixin buttonColorsInverted(){
     background-color : #fff;
-    color: $blueColor;
-    border: .5px solid $blueColor ;
-    box-shadow: 2px 2px 0px 0px  $pinkColor;
+    color: $pinkColor;
+    // border: 2px solid $pinkColor ;
+    box-shadow: 5px 5px 0px 0px  $blueColor;
+}
+@mixin buttonSize{
+    padding: 1rem 2rem;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem !important;
+}
+
+
+@mixin linkColors(){
+    background-color : $pinkColor;
+    // color: $blueColor;
+    // // border: .5px solid $blueColor ;
+    // box-shadow: 2px 2px 0px 0px  $pinkColor;
 }

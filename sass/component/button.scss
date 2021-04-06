@@ -1,10 +1,7 @@
 .btn:link,
 .btn:visited{
     @include buttonColors;
-    padding: 1rem 2rem;
-    position: relative;
-    font-weight: bold;
-    font-size: 1.4rem !important; 
+    @include buttonSize;
 }
 
 .btn:hover{
@@ -21,9 +18,9 @@
     padding: 0.7rem 1.6rem;
     position: relative;
     font-size: 1.2rem;
-        text-transform: uppercase;
-        font-weight: bolder;
-        font-family: Roboto ;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Roboto ;
 }
 
 .btn-nav:hover{
@@ -31,10 +28,23 @@
     border: 2px solid #E43583;
     color: #fff;
     box-shadow: 5px 5px 0px 0px  $blueColor;
-    transition: 0.2s;
+    transition: all 0.2s;
 }
 
 .btn--centered-size{
     text-align: center;
     margin-top: 50px;
 }
+
+.btn--inverted-color{
+    @include buttonColorsInverted;
+    @include buttonSize;
+}
+.btn--inverted-color:hover{
+    background-color: $blueColor;
+    // border: 2px solid #E43583;
+    color: #fff;
+    box-shadow: 5px 5px 0px 0px  white;
+    transition: all 0.2s;
+}
+
