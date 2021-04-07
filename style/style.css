@@ -193,7 +193,7 @@ body {
 }
 
 .header-section {
-  border: 1px solid rgba(0, 0, 0, 0);
+  position: relative;
 }
 
 .navigation {
@@ -205,7 +205,7 @@ body {
   width: 100vw;
   background-color: white;
   min-height: 8vh;
-  position: fixed;
+  position: sticky;
   z-index: 3000000000000000000;
 }
 .navigation__link-box {
@@ -263,6 +263,11 @@ body {
   text-transform: uppercase;
   line-height: normal;
   margin: 0;
+}
+
+.hero__container {
+  width: 80vw !important;
+  margin: 0 auto !important;
 }
 
 .menu--shadow {
