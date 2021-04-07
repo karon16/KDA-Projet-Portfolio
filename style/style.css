@@ -193,19 +193,20 @@ body {
 }
 
 .header-section {
-  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .navigation {
-  margin-top: -5px;
+  margin-top: -3px;
   display: flex;
   justify-content: space-between;
   padding: 10px 40px 10px 20px;
   align-items: center;
   width: 100vw;
   background-color: white;
-  z-index: 3000000000000000000;
+  min-height: 8vh;
   position: fixed;
+  z-index: 3000000000000000000;
 }
 .navigation__link-box {
   width: 60%;
@@ -251,7 +252,6 @@ body {
 
 .hero-section {
   padding: 100px auto !important;
-  margin-top: 5% !important;
 }
 .hero-section__text, .hero-section__image {
   height: auto;
@@ -454,11 +454,10 @@ body {
 @media screen and (max-width: 768px) {
   .navigation__link-box {
     position: absolute;
-    top: 12vh;
+    top: 10vh;
     height: 50vh;
     right: 0px;
     background-color: #FDFDFD;
-    border-top: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -501,10 +500,6 @@ body {
   z-index: 1;
   opacity: 0.7;
   transition: all 0.5s ease-in-out 0.3s;
-}
-
-.border {
-  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
