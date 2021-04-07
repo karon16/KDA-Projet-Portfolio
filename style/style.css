@@ -194,7 +194,6 @@ body {
 
 .header-section {
   position: relative;
-  border: 1px solid black;
 }
 
 .navigation {
@@ -252,15 +251,10 @@ body {
 
 .hero-section {
   padding: 100px auto !important;
-  margin-top: 20% !important;
-  border: 1px solid black;
+  margin-top: 5% !important;
 }
 .hero-section__text, .hero-section__image {
   height: auto;
-}
-.hero-section .ui.menu {
-  border-bottom: 0 none !important;
-  box-shadow: none;
 }
 .hero-section .text-head--size {
   font-size: 6.4rem;
@@ -269,6 +263,11 @@ body {
   text-transform: uppercase;
   line-height: normal;
   margin: 0;
+}
+
+.menu--shadow {
+  box-shadow: 0px 0px 10px -8px black !important;
+  background: white;
 }
 
 .about {
@@ -348,7 +347,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.05;
+  opacity: 0.03;
   z-index: -1;
 }
 .specialisation__card--color {
@@ -365,17 +364,13 @@ body {
 }
 .specialisation__card--animation:hover {
   background: white;
-  transition: all 0.5s ease-out 0.2s;
+  transition: all 0.4s ease-out 0.1s;
   border: 2px solid #0099CD;
   color: black;
   box-shadow: 3px 3px 0px 0px #E43583;
-  fill: black;
 }
-.specialisation__svg--color {
-  position: relative;
-}
-.specialisation__svg--color {
-  fill: #000;
+.specialisation .fas {
+  font-size: 5rem;
 }
 
 .portfolio .visible-card {
@@ -415,7 +410,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.05;
+  opacity: 0.03;
   z-index: -1;
 }
 .footer .footer__header {
@@ -459,7 +454,7 @@ body {
 @media screen and (max-width: 768px) {
   .navigation__link-box {
     position: absolute;
-    top: 10vh;
+    top: 12vh;
     height: 50vh;
     right: 0px;
     background-color: #FDFDFD;
@@ -472,6 +467,10 @@ body {
     transform: translateX(100%);
     transition: transform 0.5s ease 0.2s;
     z-index: 3;
+  }
+
+  .hero-section {
+    margin-top: 20%;
   }
 
   .nav-link {

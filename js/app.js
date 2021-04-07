@@ -1,6 +1,7 @@
 const navMenu = document.getElementById('navigation');
 window.onscroll = function(){
     navMenu.classList.add('menu--shadow');
+    console.log(navMenu)
 }
 
 
@@ -17,15 +18,6 @@ portfolioBtn.addEventListener('click', (e) =>{
     console.log("b")
 })
 
-// if(btnChange.classList.contains('change')){
-//     portfolioBtn.addEventListener('ciicked', () =>{
-//         e.preventDefault();
-//         portfolioCard.classList.add('hidden-card')
-//         btnChange.classList.remove('change');
-//         btnChange.innerHTML = "VOIR PLUS";
-//         console.log('a')
-//     })       
-// }
 
 const navSlide = function(){
     const burger = document.querySelector('.burger');
