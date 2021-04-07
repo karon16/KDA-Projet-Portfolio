@@ -15,8 +15,7 @@
     margin: $marginTopBottomMain $marginRight !important;
 }
 .main-page{
-    position: relative;
-    // border: 1px solid black;
+    position: relative
 
 }
 
@@ -28,7 +27,6 @@
 
 
 .navigation{
-    // border: 1px solid black;
     margin-top: -3px;
     display: flex;
     justify-content: space-between;
@@ -38,8 +36,8 @@
     width: 100vw;
     background-color: white;
     min-height: 8vh;
-    position: sticky;
-    // top: 50px;
+    position: fixed;
+    // top: 0px;
     z-index: 3000000000000000000;
     // top : 50px;
     // box-shadow: 0px 0px 10px -5px black;
@@ -91,9 +89,9 @@
     }
 }
 .hero-section{
-    padding: 100px auto !important;
-    // margin-top: 5% !important;
-    // // border: 1px solid black;
+    // padding: 50px auto !important;
+    // margin-top: 9% !important;
+    
     // border : 1px solid black;
 
     &__text, &__image{
@@ -110,8 +108,9 @@
     } 
 }
 .hero__container{
-    width: $sizeMain !important;
+    width: $sizeMain ;
     margin: 0 $marginRight !important;
+    padding: 55px 0
 }
 
 .menu--shadow{
@@ -157,6 +156,8 @@
     // background-color: rgb(255, 249, 250);
 
     // background: $greyColor;
+    background-color: $backgroundGreyColor;
+
     &__card--color{
         background: #fff;
         padding: 30px;
@@ -227,20 +228,22 @@
         box-shadow: 3px 3px 0px 0px  $pinkColor;
     }
     .fas{
-        font-size: 5rem;
+        font-size: 5rem
     }
 }
 
 .portfolio{
+    background-color: $backgroundGreyColor;
+
     .visible-card{
         visibility: visible;
     }
 }
 
 .contact{
-    // background-color: $backgroundGreyColor;
-    // background-color: rgb(255, 249, 250);
     background-color: $pinkColor;
+    // background-color: rgb(253, 242, 244);
+
 
 
     .field input, .field textarea{
@@ -260,6 +263,7 @@
 
 
 }
+
 .footer{
     position: relative;
     &--background-color{
@@ -299,8 +303,6 @@
     .copy-right{
         text-align: center;
         color: rgba(255,255,255,0.5);
-        // color: $pinkColor;
-        // font-weight : bold ;
     } 
 }
 
@@ -328,30 +330,24 @@
         height: 50vh;
         right: 0px;
         background-color: $greyColor;
-        // border-top: 1px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        // padding: 50px 0;
         width: 100vw;
         transform: translateX(100%);
         transition: transform 0.5s ease 0.2s;
-        // border: 1px solid black;
         z-index: 3;
     }   
     .hero-section{
-        margin-top: 20%;
+        margin-top: 10% !important;
+        margin-bottom: 15%;
     }
-
+ 
     .nav-link{
-        // opacity: 0;
         border-bottom: 1px solid $pinkColor;
         
     }
-    // .link-animated{
-    //     animation : navLinksFade 0.3s ease  5s;
-    // }
     .burger{
         display: block;
         cursor: pointer;
@@ -364,6 +360,12 @@
     }
 }
 
+@media screen and (max-width: 1200px){
+    .hero-section{
+        margin-top: 15% !important;
+        margin-bottom: 15%;
+    }
+}
 .nav-active{
     transform: translateX(0%) ;
 }
@@ -375,20 +377,7 @@
     height: 100%;
     width: 100%;
     background-color: #000;
-    z-index: 1;
+    z-index: 10;
     opacity: .7;
     transition: all 0.5s ease-in-out .3s  ;
 }
-// @keyframes navLinksFade {
-//     from{
-//         opacity: 0;
-//         transform: translateX(50px);
-//     }
-//     to{
-//         opacity: 1;
-//         transform: translateX(0px);
-//     }
-// }
-// .border{
-//     border: 1px solid black;
-// }

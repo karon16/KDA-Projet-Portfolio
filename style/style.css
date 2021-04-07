@@ -205,7 +205,7 @@ body {
   width: 100vw;
   background-color: white;
   min-height: 8vh;
-  position: sticky;
+  position: fixed;
   z-index: 3000000000000000000;
 }
 .navigation__link-box {
@@ -250,9 +250,6 @@ body {
   margin: 6px 0;
 }
 
-.hero-section {
-  padding: 100px auto !important;
-}
 .hero-section__text, .hero-section__image {
   height: auto;
 }
@@ -266,8 +263,9 @@ body {
 }
 
 .hero__container {
-  width: 80vw !important;
+  width: 80vw;
   margin: 0 auto !important;
+  padding: 55px 0;
 }
 
 .menu--shadow {
@@ -307,6 +305,9 @@ body {
   color: #E43583;
 }
 
+.skills {
+  background-color: #fdfdfd;
+}
 .skills__card--color {
   background: #fff;
   padding: 30px;
@@ -378,6 +379,9 @@ body {
   font-size: 5rem;
 }
 
+.portfolio {
+  background-color: #fdfdfd;
+}
 .portfolio .visible-card {
   visibility: visible;
 }
@@ -474,7 +478,8 @@ body {
   }
 
   .hero-section {
-    margin-top: 20%;
+    margin-top: 10% !important;
+    margin-bottom: 15%;
   }
 
   .nav-link {
@@ -491,6 +496,12 @@ body {
     display: none !important;
   }
 }
+@media screen and (max-width: 1200px) {
+  .hero-section {
+    margin-top: 15% !important;
+    margin-bottom: 15%;
+  }
+}
 .nav-active {
   transform: translateX(0%);
 }
@@ -502,7 +513,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #000;
-  z-index: 1;
+  z-index: 10;
   opacity: 0.7;
   transition: all 0.5s ease-in-out 0.3s;
 }
