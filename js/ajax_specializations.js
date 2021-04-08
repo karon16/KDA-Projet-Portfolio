@@ -10,13 +10,16 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
     for(const specialization of specializations){
 
         // creating elements
+        const specialisationMainContainer = document.createElement('div');
+        specialisationMainContainer.classList.add("column", "center", "aligned")
+
         const specializationContainer = document.createElement('div');
         specializationContainer.classList.add("specialisation__card", "specialisation__card--color", "specialisation__card--size", "specialisation__card--animation");
 
         const iconContainer = document.createElement('div');
 
         const icon = document.createElement('i');
-        icon.classList.add("fas", "fa-laptop-code");
+        icon.classList.add(` "${specialization.iconClass1}" "${specialization.iconClass2}`);
 
         const title = document.createElement('h3');
         title.classList.add("third__title--size");
@@ -33,6 +36,9 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
         specializationContainer.appendChild(title);
         specializationContainer.appendChild(paragraph);
 
-        blockSpecialization.appendChild(specializationContainer);
+        specialisationMainContainer.appendChild(specializationContainer);
+        blockSpecialization.appendChild(specialisationMainContainer);
     }
 })
+
+const 
