@@ -19,7 +19,7 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
         const iconContainer = document.createElement('div');
 
         const icon = document.createElement('i');
-        icon.classList.add(` "${specialization.iconClass1}" "${specialization.iconClass2}`);
+        icon.classList.add(`"${specialization.iconClass1}" "${specialization.iconClass2}`);
 
         const title = document.createElement('h3');
         title.classList.add("third__title--size");
