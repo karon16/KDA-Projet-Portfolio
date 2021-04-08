@@ -60,21 +60,21 @@
   "specializations" : [
     {
       "id" : 0,
-      "iconClass1" : "fas fa-laptop-code",
+      "iconClass1" : "fas",
       "iconClass2" : "fa-laptop-code",
       "title" : "Front-end & Back-end",
       "paragraph" : " Diplomé de la Kinshasa Digital Academy en Développement d'application web et web mobile."
     },
     {
       "id" : 1,
-      "iconClass1" : "fas fa-drafting-compass",
+      "iconClass1" : "fas",
       "iconClass2" : "fa-drafting-compass",
       "title" : "Désign Graphique",
       "paragraph" : "Je suis un self-taught désigner graphiste depuis 2017 et j'ai eu a travaillé avec différent grande boîte. et entreprises."
     },
     {
       "id" : 2,
-      "iconClass1" : "fas fa-users-cog",
+      "iconClass1" : "fas",
       "iconClass2" : "fa-users-cog",
       "title" : "Désign UX/UI",
       "paragraph" : "Formation incluse le curriculum de la Kinshasa Digital Academy et j'ai acquéri plus de connaissences et d'expériences en travaillant sur des projets réels"

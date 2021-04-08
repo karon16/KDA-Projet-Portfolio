@@ -41,4 +41,4 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
     }
 })
 
-const 
+// const 
