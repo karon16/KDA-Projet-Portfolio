@@ -7,7 +7,7 @@ fetch('http://localhost:3000/portfolio1')
     }
 ).then(
     function (portfolio1) {
-        for(let card of portfolio1){
+        for(let row of portfolios){
             const 
         }
     }

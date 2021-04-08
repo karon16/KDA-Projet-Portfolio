@@ -33,9 +33,9 @@
         "skillName" : "sass",
         "skillValue" : 75
       }
-    ],
+    ]},
     
-    
+    {
     "skillsTwo" : [
       {
         "id" : 0 ,
@@ -85,52 +85,58 @@
     }
   ],
 
-  "portfolio1" : [
+  "portfolios": [
     {
-      "id" : 0,
-      "image1" : "./img/win-game-paques-logo2.jpg",
-      "image2" : "./img/solde-outlet-zara.jpg",
-      "title" : "Le Premier Shopping Mall",
-      "description" : "Adobe Photoshop &amp; Adobe Illustrator"
-    },
-    {
-      "id" : 1,
-      "image1" : "./img/vodka final.jpg",
-      "image2" : "./img/vin-rouge-libanais-ixsir.jpg",
-      "title" : "Boissons de Kin",
-      "description" : "Adobe Photoshop &amp; Adobe Illustrator"
-    },
-    {
-      "id" : 2,
-      "image1" : "./img/Scooter-Final.png",
-      "image2" : "./img/Nivea.jpg",
-      "title" : "ChicShop RDC",
-      "description" : "Adobe Photoshop &amp; Adobe Illustrator &amp; Adobe InDesign"
-    }
-  ],
+      "portfolio1" : [
+        {
+          "id" : 0,
+          "image1" : "./img/win-game-paques-logo2.jpg",
+          "image2" : "./img/solde-outlet-zara.jpg",
+          "title" : "Le Premier Shopping Mall",
+          "description" : "Adobe Photoshop &amp; Adobe Illustrator"
+        },
+        {
+          "id" : 1,
+          "image1" : "./img/vodka final.jpg",
+          "image2" : "./img/vin-rouge-libanais-ixsir.jpg",
+          "title" : "Boissons de Kin",
+          "description" : "Adobe Photoshop &amp; Adobe Illustrator"
+        },
+        {
+          "id" : 2,
+          "image1" : "./img/Scooter-Final.png",
+          "image2" : "./img/Nivea.jpg",
+          "title" : "ChicShop RDC",
+          "description" : "Adobe Photoshop &amp; Adobe Illustrator &amp; Adobe InDesign"
+        }
+      ]},
 
-  "portfolio2" : [
     {
-      "id" : 0,
-      "image1" : "./img/site-kd.png",
-      "image2" : "./img/site-kd2.png",
-      "title" : "Reproduction du site Kinshasa Digital Academy",
-      "description" : "HTML &amp; CSS"
-    },
-    {
-      "id" : 1,
-      "image1" : "./img/Capture d’écran 2021-04-03 193058.png",
-      "image2" : "./img/Section1.png",
-      "title" : "Audit Maquette nouveau site Kinshasa Digital Academy",
-      "description" : "UX/UI Design &amp; Figma &amp; Draw.io"
-    },
-    {
-      "id" : 2, 
-      "image1" : "./img/Composite 01.jpg",
-      "image2" : "./img/Desktop - 1.png",
-      "title" : "Travaux Personnels",
-      "description" : "Adobe Photshop &amp; Figma"
-    }
-  ]
-
+      "portfolio2" : [
+        {
+          "id" : 0,
+          "image1" : "./img/site-kd.png",
+          "image2" : "./img/site-kd2.png",
+          "title" : "Reproduction du site Kinshasa Digital Academy",
+          "description" : "HTML &amp; CSS"
+        },
+        {
+          "id" : 1,
+          "image1" : "./img/Capture d’écran 2021-04-03 193058.png",
+          "image2" : "./img/Section1.png",
+          "title" : "Audit Maquette nouveau site Kinshasa Digital Academy",
+          "description" : "UX/UI Design &amp; Figma &amp; Draw.io"
+        },
+        {
+          "id" : 2, 
+          "image1" : "./img/Composite 01.jpg",
+          "image2" : "./img/Desktop - 1.png",
+          "title" : "Travaux Personnels",
+          "description" : "Adobe Photshop &amp; Figma"
+        }
+      ]}
+]
 }
+  
+
+  
