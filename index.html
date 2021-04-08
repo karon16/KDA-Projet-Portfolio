@@ -26,8 +26,8 @@
                     <img src="./img/logo-min.png" alt="" class="navigation__image">
                 </div>
                 <div class="navigation__link-box">
-                    <a href="#about" class="nav-link" >Accueil</a>
-                    <a href="" class="nav-link">A propos</a>
+                    <a href="#accueil" class="nav-link" >Accueil</a>
+                    <a href="#about" class="nav-link">A propos</a>
                     <a href="" class="nav-link">Compétences</a>
                     <a href="" class="nav-link">Portfolio</a>
                     <a href="#contacts" class=" btn-nav btn-nav--hidden btn-nav--color ">CONTACTER</a>
@@ -38,15 +38,15 @@
                     <div class="line3"></div>
                 </div>
             </nav>         
-            <div class="hero__container ">
-                <div class="hero-section  ui stackable grid border">
+            <div id="accueil" class="hero__container ">
+                <div class="hero-section  ui stackable grid">
                     <div class="eight wide column middle aligned hero-section__descritpion">
                         <p  class=" description__text-head text-head--size paragraphs--color"> je suis <br> votre</p>
                         <div class="description__image description__image--size"><img src="img/Group 34.png" class="image--size" alt=""></div>
                         <h1 class="description__paragraph description__paragraph--size paragraphs--color paragraphs--font-family">Designer Graphiste, Devloppeur Web, Graphiste Web, UX/UI Designer</h1>
                         <a href="" class="btn btn--color">DEMANDER UN DEVIS</a>
                     </div>
-                    <div class="eight wide column middle aligned tablet computer only hero-section__image border"><object type="image/svg+xml" data="./img/Design tools2.svg" class="animated__image"></object></div>
+                    <div class="eight wide column middle aligned tablet computer only hero-section__image"><object type="image/svg+xml" data="./img/Design tools2.svg" class="animated__image"></object></div>
                 </div>
             </div>
         </header>
@@ -79,9 +79,9 @@
         <section id = "skills" class="skills body-section  body-section--paddings">
             <h2 class="titles--font-family titles--font-color titles--font-size titles--underline"><span class="title--second-color">Mes</span> compétences</h2>
             <div class="section__container">
-                <div id="blockSkills" class="ui relaxed fluid stackable grid">
-                    <div class="eight wide column">
-                        <div class="skills__card skills__card--color">
+                <div  class="ui relaxed fluid stackable grid">
+                    <div  class="eight wide column">
+                        <div id="blockSkillsOne" class="skills__card skills__card--color">
                             <div>
                                 <label class="skills__name skills__name--size label--font-family" for="file">HTML</label>
                                 <progress class="progress__bar progress__bar--settings" id="file" value="90" max="100"> 90% </progress>
@@ -101,8 +101,8 @@
                         </div>
                     </div>
                     <div class="eight wide column">
-                        <div class="skills__card skills__card--color">
-                            <div>
+                        <div id="blockSkillsTwo" class="skills__card skills__card--color">
+                            <!-- <div>
                                 <label class="skills__name skills__name--size label--font-family" for="file">ADOBE XD</label> 
                                 <progress class="progress__bar progress__bar--settings" id="file" value="65" max="100"> 65% </progress>
                             </div>
@@ -117,7 +117,7 @@
                             <div>
                                 <label class="skills__name skills__name--size label--font-family" for="file">FIGMA</label> 
                                 <progress class="progress__bar progress__bar--settings" id="file" value="65" max="100"> 65% </progress>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
             <div class="section__container">
                 <div class="ui stackable grid">
                     <div class=" three column row">
-                        <div class="column center aligned ">
+                        <div id="blockSpecialization" class="column center aligned ">
                             <div class="specialisation__card specialisation__card--color specialisation__card--size specialisation__card--animation">
                                 <div>
                                     <i class="fas fa-laptop-code"></i>
@@ -277,10 +277,10 @@
         </section>
 
         <section class="body-section  body-section--paddings contact">
-            <h2 class=" about__title titles--font-family title--third-color titles--font-size titles--underline-white">Me <span class="title--black">contacter</span> </h2>
+            <h2 class=" about__title titles--font-family title--third-color titles--font-size titles--underline-white">Me contacter</h2>
             <div class="section__container">
-                <div class="ui relaxed stackable grid">
-                    <div class="seven wide column">
+                <div class="ui three column stackable grid contact__main-container contact__main-container--paddings">
+                    <!-- <div class="seven wide column">
                         <form class="ui huge form">
                             <div class="field">
                                 <input type="text" name="first-name" placeholder="First Name">
@@ -313,6 +313,30 @@
                             <p class=" paragraphs--font-family"><span class="icon--font-color bold--text"><i class="fas fa-map-marker-alt"></i></span> &nbsp; Kinshasa, RDC</p>
                         </div>
                     </div>
+                </div> -->
+                        <div class="column contact__info-container contact__info__position" >
+                            <span class="iconify" data-icon="ic:outline-phone-android" data-inline="false"></span>
+                            <div class="contact__text-info--position">
+                                <p class ="info__paragrgaph--font">Appelez au</p>
+                                <a class ="info__link--font" href="tel:+243852611949">+243 85 26 11 949</a>
+                            </div>
+                        </div>
+                        <div class="column contact__info-container contact__info__position">
+                            <span class="iconify" data-icon="carbon:email" data-inline="false"></span>
+                            <div class="contact__text-info--position">
+                                <p class ="info__paragrgaph--font">Ecrivez à</p>
+                                <a class ="info__link--font" href="mailto:christopherbuhendwa2000@gmail.com">christopherbuhendwa2000@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="column contact__info-container contact__info__position">
+                            <span class="iconify" data-icon="clarity:map-line" data-inline="false"></span>
+                            <div class="contact__text-info--position">
+                                <p class ="info__paragrgaph--font">Visitez</p>
+                                <a class ="info__link--font" href="">Kinshasa, RDC</a>
+                            </div>
+                            
+                       
+                    </div>
                 </div>
             </div>
         </section>
@@ -327,16 +351,16 @@
                 </div>
                 <div class="footer__logo footer__logo--position">
                     <div>
-                        <span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false" style="color: white;"></span>
+                        <span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false"></span>
                     </div>
                     <div>
-                        <span class="iconify" data-icon="ant-design:behance-square-filled" data-inline="false" style="color: white;"></span>
+                        <span class="iconify" data-icon="ant-design:behance-square-filled" data-inline="false"></span>
                     </div><div>
-                        <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false" style="color: white;"></span>
+                        <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
                     </div><div>
-                        <span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false" style="color: white;"></span>
+                        <span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
                     </div><div>
-                        <span class="iconify" data-icon="bi:discord" data-inline="false" style="color: white;"></span>
+                        <span class="iconify" data-icon="bi:discord" data-inline="false"></span>
                     </div>
                 </div>
             </div>
@@ -345,6 +369,7 @@
     </main>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/ajax_skills.js"></script>
     <script src="./js/ajax_about.js"></script>
     <script src="./js/app.js"></script>
 </body>

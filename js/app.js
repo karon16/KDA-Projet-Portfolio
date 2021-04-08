@@ -21,13 +21,27 @@ portfolioBtn.addEventListener('click', (e) =>{
 const navSlide = function(){
     const burger = document.querySelector('.burger');
     const navigationLinkBox = document.querySelector('.navigation__link-box');
-    const navLinks = document.querySelectorAll('.navigation__link-box .nav-link');
+    const navLinks = document.querySelectorAll('.nav-link');
     const mainPage = document.querySelector('.main-page .header-background');
 
     burger.addEventListener('click', () =>{
         navigationLinkBox.classList.toggle('nav-active');
-        mainPage.classList.toggle('main-page--blacked')
+        mainPage.classList.toggle('main-page--blacked');
     })
+    
+    // console.log(navLinks);
+    navLinks.forEach((link) => {
+        link.addEventListener('click', ()=>{
+        navigationLinkBox.classList.remove('nav-active');
+        mainPage.classList.remove('main-page--blacked');
+
+        })
+
+    });
+    // navLinks.addEventListener('click', ()=>{
+    //     navigationLinkBox.classList.remove('nav-active');
+    // })
+
 }
 
 navSlide();

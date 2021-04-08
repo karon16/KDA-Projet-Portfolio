@@ -311,7 +311,7 @@ body {
 .skills__card--color {
   background: #fff;
   padding: 30px;
-  box-shadow: 0px 0px 10px -8px black;
+  box-shadow: 0px 0px 2px -1px black;
   margin-top: 10px;
 }
 .skills__card--color div {
@@ -361,21 +361,20 @@ body {
 .specialisation__card--color {
   background-color: #E43583;
   color: #fff;
-  box-shadow: 3px 3px 0px 0px #0099CD;
 }
 .specialisation__card--size {
   width: 100%;
   height: 100%;
   padding: 20px 20px;
   position: relative;
-  border: 2px solid #E43583;
 }
 .specialisation__card--animation:hover {
   background: white;
-  transition: all 0.4s ease-out 0.1s;
-  border: 2px solid #0099CD;
+  transition: all 0.3s ease-out;
   color: black;
-  box-shadow: 3px 3px 0px 0px #E43583;
+}
+.specialisation__card--animation:hover .fas {
+  color: #E43583;
 }
 .specialisation .fas {
   font-size: 5rem;
@@ -391,17 +390,32 @@ body {
 .contact {
   background-color: #E43583;
 }
-.contact .field input, .contact .field textarea {
-  border-radius: 0px !important;
+.contact__main-container--paddings {
+  margin-top: 50px !important;
 }
-.contact .text__area--margin {
-  margin-bottom: 100%;
+.contact__info__position {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.contact__details {
-  background-color: white;
-  padding: 30px 20px;
-  height: 100%;
-  box-shadow: 0px 0px 10px -8px black;
+.contact__text-info--position {
+  margin-left: 10px;
+}
+.contact .info__link--font {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact .iconify {
+  color: #f8f8f8;
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+.contact .info__paragrgaph--font {
+  color: #f8f8f8;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 3px;
 }
 
 .footer {
@@ -432,6 +446,12 @@ body {
 }
 .footer .iconify {
   font-size: 5rem;
+  color: white;
+  opacity: 0.5;
+}
+.footer .iconify:hover {
+  opacity: 1;
+  transition: all 0.2s linear;
 }
 .footer .footer__logo--position {
   display: flex;
@@ -518,6 +538,10 @@ body {
   z-index: 10;
   opacity: 0.7;
   transition: all 0.5s ease-in-out 0.3s;
+}
+
+.border {
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
