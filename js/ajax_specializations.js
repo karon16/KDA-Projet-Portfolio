@@ -1,6 +1,7 @@
 const blockSpecialization = document.querySelector('#blockSpecialization');
+const specialiationMain = document.querySelector('#specialiationMain')
 
-fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/specializations')
+fetch('http://localhost:3000/specializations')
 .then(
     function(response){
         return response.json();
@@ -19,7 +20,7 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
         const iconContainer = document.createElement('div');
 
         const icon = document.createElement('i');
-        icon.classList.add(`"${specialization.iconClass1}" "${specialization.iconClass2}"`);
+        icon.classList.add(`${specialization.iconClass1}`, `${specialization.iconClass2}`);
 
         const title = document.createElement('h3');
         title.classList.add("third__title--size");
@@ -38,7 +39,18 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
 
         specialisationMainContainer.appendChild(specializationContainer);
         blockSpecialization.appendChild(specialisationMainContainer);
+
     }
+        const btnContainer = document.createElement('div');
+        btnContainer.classList.add("btn--cente", "btn--centered-size");
+
+        const btnLink = document.createElement('a');
+        btnLink.classList.add("btn", "btn--color", "btn--cente");
+        btnLink.setAttribute('href', 'mailto:hristopherbuhendwa2000@gmail.com');
+        btnLink.textContent = "ENGAGEZ-MOI"
+
+        btnContainer.appendChild(btnLink);
+        specialiationMain.appendChild(btnContainer);
 })
 
 // const 
