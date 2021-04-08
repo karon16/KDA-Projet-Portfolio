@@ -30,6 +30,11 @@
       "id" : 3 ,
       "skillName" : "sass",
       "skillValue" : 75
+    },
+    {
+      "id" : 4 ,
+      "skillName" : "akelax",
+      "skillValue" : 10
     }
 
   ],
