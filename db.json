@@ -9,27 +9,51 @@
       "alt" : "photo de profil christopher Buhendwa"
     }
   ],
-  "skills" : [
-    {
-      "html" : "HTML",
-      "htmlValue" : 95,
-      "css" : "css",
-      "cssValue" : 80,
-      "javascript" : "JAVASCTIPT",
-      "javaScript" : 65,
-      "sass" : "SASS",
-      "sassValue" : 75 ,
-      "adobeXd" :"ADOBE XD",
-      "adobeXdValue" :65,
-      "adobePhotoshop" :"ADOBE PHOTOSHOP",
-      "adobePhotoshopValue" : 70 ,
-      "adobeIllustrator" :"ADOBE ILLUSTRATOR",
-      "adobeIllustratorValue" :50 ,
-      "figma" :"FIGMA",
-      "figmaValue" : 65
 
+  "skillsOne" : [
+    {
+      "id" : 0 ,
+      "skillName" : "html",
+      "skillValue" : 90
+    },
+    {
+      "id" : 1 ,
+      "skillName" : "css",
+      "skillValue" : 80
+    },
+    {
+      "id" : 2 ,
+      "skillName" : "javascript",
+      "skillValue" : 55
+    },
+    {
+      "id" : 3 ,
+      "skillName" : "sass",
+      "skillValue" : 75
     }
 
-  ]
+  ],
 
+  "skillsTwo" : [
+    {
+      "id" : 0 ,
+      "skillName" : "adobe illustrator",
+      "skillValue" : 50
+    },
+    {
+      "id" : 2 ,
+      "skillName" : "adobe xd",
+      "skillValue" : 65
+    },
+    {
+      "id" : 1 ,
+      "skillName" : "adobe photoshop",
+      "skillValue" : 70
+    },
+    {
+      "id" : 3 ,
+      "skillName" : "figma",
+      "skillValue" : 65
+    }
+  ]
 }

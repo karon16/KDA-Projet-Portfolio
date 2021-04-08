@@ -169,6 +169,8 @@
     }
     .skills__name--size{
         font-weight: bold;
+        display: block;
+        text-transform: uppercase;
     }
     .progress__bar--settings{
         background-color: #BFE5F3 ;
@@ -293,8 +295,6 @@
     }
     .iconify{
         font-size:5rem;
-        // background-color: red !important ;
-        color: red !important;
     }
     .footer__logo--position{
         display: flex;

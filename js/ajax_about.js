@@ -1,6 +1,6 @@
 const blockIdentities = document.querySelector('#blocIdentities');
 
-fetch("http://localhost:3000/identities")
+fetch("https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/identities")
 .then(
     function(response) {
         return response.json();

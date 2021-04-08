@@ -319,6 +319,8 @@ body {
 }
 .skills .skills__name--size {
   font-weight: bold;
+  display: block;
+  text-transform: uppercase;
 }
 .skills .progress__bar--settings {
   background-color: #BFE5F3;
@@ -430,7 +432,6 @@ body {
 }
 .footer .iconify {
   font-size: 5rem;
-  color: red !important;
 }
 .footer .footer__logo--position {
   display: flex;
