@@ -1,0 +1,35 @@
+{
+  "identities": [
+    {
+      "firstName": "Christopher",
+      "lastName": "Buhendwa",
+      "Biography": "Un développeur web, désigner graphiste et UX/UI désigner. Je suis une personne travailleuse désirant constamment appliquer les compétences et connaisannces que j'ai apprise. Je crois en la ponctualité, à l'honetété et à la qualité du travail que je fourni. Je suis étudiant à la Kinshasa Digital Academy; j'ai travaillé avec plusieurs différents clients et je suis toujours en recherhce d'experience afin de travailler à mon maximum.",
+      "cvLink" : "./cv/Christopher buhendwa (3).pdf",
+      "image" : "./img/moi.png",
+      "alt" : "photo de profil christopher Buhendwa"
+    }
+  ],
+  "skills" : [
+    {
+      "html" : "HTML",
+      "htmlValue" : 95,
+      "css" : "css",
+      "cssValue" : 80,
+      "javascript" : "JAVASCTIPT",
+      "javaScript" : 65,
+      "sass" : "SASS",
+      "sassValue" : 75 ,
+      "adobeXd" :"ADOBE XD",
+      "adobeXdValue" :65,
+      "adobePhotoshop" :"ADOBE PHOTOSHOP",
+      "adobePhotoshopValue" : 70 ,
+      "adobeIllustrator" :"ADOBE ILLUSTRATOR",
+      "adobeIllustratorValue" :50 ,
+      "figma" :"FIGMA",
+      "figmaValue" : 65
+
+    }
+
+  ]
+
+}
