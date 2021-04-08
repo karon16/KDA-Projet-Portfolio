@@ -7,7 +7,7 @@ fetch("https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/identiti
     }
 )
 .then(function (identities) {
-    for (const identity of identities) {
+    for (let identity of identities) {
 
         // creating and assigning element
         const identitiesMainContainer = document.createElement('div');
