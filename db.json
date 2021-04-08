@@ -10,50 +10,53 @@
     }
   ],
 
-  "skillsOne" : [
+  "skills" : [
     {
-      "id" : 0 ,
-      "skillName" : "html",
-      "skillValue" : 90
-    },
+    "skillsOne" : [
+      {
+        "id" : 0 ,
+        "skillName" : "html",
+        "skillValue" : 90
+      },
+      {
+        "id" : 1 ,
+        "skillName" : "css",
+        "skillValue" : 80
+      },
+      {
+        "id" : 2 ,
+        "skillName" : "javascript",
+        "skillValue" : 55
+      },
+      {
+        "id" : 3 ,
+        "skillName" : "sass",
+        "skillValue" : 75
+      }
+    ]},
     {
-      "id" : 1 ,
-      "skillName" : "css",
-      "skillValue" : 80
-    },
-    {
-      "id" : 2 ,
-      "skillName" : "javascript",
-      "skillValue" : 55
-    },
-    {
-      "id" : 3 ,
-      "skillName" : "sass",
-      "skillValue" : 75
-    }
-  ],
-
-  "skillsTwo" : [
-    {
-      "id" : 0 ,
-      "skillName" : "adobe illustrator",
-      "skillValue" : 50
-    },
-    {
-      "id" : 2 ,
-      "skillName" : "adobe xd",
-      "skillValue" : 65
-    },
-    {
-      "id" : 1 ,
-      "skillName" : "adobe photoshop",
-      "skillValue" : 70
-    },
-    {
-      "id" : 3 ,
-      "skillName" : "figma",
-      "skillValue" : 65
-    }
+    "skillsTwo" : [
+      {
+        "id" : 0 ,
+        "skillName" : "adobe illustrator",
+        "skillValue" : 50
+      },
+      {
+        "id" : 2 ,
+        "skillName" : "adobe xd",
+        "skillValue" : 65
+      },
+      {
+        "id" : 1 ,
+        "skillName" : "adobe photoshop",
+        "skillValue" : 70
+      },
+      {
+        "id" : 3 ,
+        "skillName" : "figma",
+        "skillValue" : 65
+      }
+    ]}
   ],
 
   
