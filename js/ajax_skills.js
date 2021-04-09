@@ -2,7 +2,7 @@ const blockSkillsOne = document.querySelector('#blockSkillsOne');
 const blockSkillsTwo = document.querySelector('#blockSkillsTwo');
 
 // fetching skills from box one
-fetch('http://localhost:3000/skills')
+fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/skills')
 .then(
     function(response){
         return response.json();

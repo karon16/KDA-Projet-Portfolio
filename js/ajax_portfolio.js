@@ -1,6 +1,6 @@
 const portfolioRow1 = document.querySelector('#portfolioRow1');
 const portfolioRow2 = document.querySelector('#hidden-card')
-fetch('http://localhost:3000/portfolios')
+fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/portfolios')
 .then(
     function(response) {
         return response.json();

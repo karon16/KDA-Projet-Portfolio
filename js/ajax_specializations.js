@@ -1,7 +1,7 @@
 const blockSpecialization = document.querySelector('#blockSpecialization');
 const specialiationMain = document.querySelector('#specialiationMain')
 
-fetch('  http://localhost:3000/specializations')
+fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/specializations')
 .then(
     function(response){
         return response.json();
