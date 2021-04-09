@@ -28,8 +28,8 @@
                 <div class="navigation__link-box">
                     <a href="#accueil" class="nav-link" >Accueil</a>
                     <a href="#about" class="nav-link">A propos</a>
-                    <a href="" class="nav-link">Compétences</a>
-                    <a href="" class="nav-link">Portfolio</a>
+                    <a href="#skills" class="nav-link">Compétences</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
                     <a href="#contacts" class=" btn-nav btn-nav--hidden btn-nav--color ">CONTACTER</a>
                 </div>
                 <div class="burger">
@@ -173,12 +173,12 @@
             </div>
         </section>
 
-        <section class="body-section  body-section--paddings portfolio">
+        <section id = "portfolio" class="body-section  body-section--paddings portfolio">
             <h2 class="titles--font-family titles--font-color titles--font-size titles--underline"><span class="title--second-color">Mon</span> portfolio</h2>
             <div class="section__container">
                 <div class="ui relaxed stackable grid">
-                    <div id = "portfolio1MainContiner" class=" three column row">
-                        <div class="column">
+                    <div id = "portfolioRow1" class=" three column row">
+                        <!-- <div class="column">
                             <div class="ui fluid card">
                                 <div class="ui slide masked reveal image">
                                     <img src="./img/win-game-paques-logo2.jpg" class="visible content">
@@ -219,10 +219,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div id="hidden-card" class=" three column row hidden-card">
-                        <div class="column portfolio-card ">
+                        <!-- <div class="column portfolio-card ">
                             <div class="ui fluid card">
                                 <div class="ui slide masked reveal image">
                                     <img src="./img/site-kd.png" class="visible content">
@@ -263,7 +263,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="mobile tablet only sixteen wide column">
                         <div id = "portfolio-btn" class="btn--cente btn--centered-size">
@@ -276,44 +276,11 @@
             
         </section>
 
-        <section class="body-section  body-section--paddings contact">
-            <h2 class=" about__title titles--font-family title--third-color titles--font-size titles--underline-white">Me contacter</h2>
-            <div class="section__container">
-                <div class="ui three column stackable grid contact__main-container contact__main-container--paddings">
-                    <!-- <div class="seven wide column">
-                        <form class="ui huge form">
-                            <div class="field">
-                                <input type="text" name="first-name" placeholder="First Name">
-                            </div>
-                            <div class="field">
-                                <input type="text" name="last-name" placeholder="Last Name">
-                            </div>
-                            <div class="field">
-                                <input type="text" name="last-name" placeholder="Last Name">
-                            </div>
-                            <div class="field">
-                                <textarea rows="5" spellcheck="false" data-ms-editor="true"></textarea>
-                            </div>
-                            <div class="field">
-                                <a href="" class="btn btn--color btn--cente">ENVOYER</a>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="nine wide column">
-                        <div class="contact__details">
-                            <p class="titles titles--font-color paragraphs--font-family bold--text">Parlons<span> en</span></p>
-                            <p class=" paragraphs--font-family">Vous aimez mon travail ? <br> 
-                                Sentez-vous à l'aise de me contacter. 
-                                Ici bas se trouve mon numéro de téléphone et mon adresse e-mail. 
-                                Parlons des idées qui vous passent par la tête.
-                                Je suis prêt de les concretisées pour vous! Merci.
-                            </p>
-                            <p class="paragraphs--font-family"><span class="icon--font-color bold--text"><i class="fas fa-phone-square-alt"></i></span>&nbsp; +243 85 26 11 949</p>
-                            <p class=" paragraphs--font-family"><span class="icon--font-color bold--text"><i class="fas fa-envelope"></i></span> &nbsp; christopherbuhendwa2000@gmail.com</p>
-                            <p class=" paragraphs--font-family"><span class="icon--font-color bold--text"><i class="fas fa-map-marker-alt"></i></span> &nbsp; Kinshasa, RDC</p>
-                        </div>
-                    </div>
-                </div> -->
+        <section class="body-section  body-section--paddings footer--background-color footer">
+            <section id="contact" class="body-section  body-section--paddings contact">
+                <h2 class=" about__title titles--font-family title--third-color titles--font-size titles--underline-white">Me contacter</h2>
+                <div class="section__container">
+                    <div class="ui three column stackable grid contact__main-container contact__main-container--paddings">
                         <div class="column contact__info-container contact__info__position" >
                             <span class="iconify" data-icon="ic:outline-phone-android" data-inline="false"></span>
                             <div class="contact__text-info--position">
@@ -334,14 +301,10 @@
                                 <p class ="info__paragrgaph--font">Visitez</p>
                                 <a class ="info__link--font" href="">Kinshasa, RDC</a>
                             </div>
-                            
-                       
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="body-section  body-section--paddings footer--background-color footer">
+            </section>
             <!-- <p class="footer__header">Travaillons Ensemble !</p> -->
             <div class="section__container">
                 <div class="ui centered grid">
@@ -369,6 +332,7 @@
     </main>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/ajax_portfolio.js"></script>
     <script src="./js/ajax_specializations.js"></script>
     <script src="./js/ajax_skills.js"></script>
     <script src="./js/ajax_about.js"></script>

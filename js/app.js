@@ -7,14 +7,17 @@ window.onscroll = function(){
 
 const portfolioCard = document.getElementById('hidden-card');
 const portfolioBtn = document.getElementById('portfolio-btn');
-const btnChange = document.querySelector('.btn--changeable')
+let btnChange = document.querySelector('.btn--changeable')
 
+// console.log(portfolioCard);
 portfolioBtn.addEventListener('click', (e) =>{
     e.preventDefault();
     portfolioCard.classList.toggle('hidden-card');
-    btnChange.classList.add('change');
-    btnChange.innerHTML = "VOIR MOINS";
-    console.log("b")
+        if (portfolioCard.classList.contains('hidden-card')) {
+            btnChange.innerHTML = "VOIR PLUS";
+        }else{
+            btnChange.innerHTML = "VOIR MOINS";
+        }
 })
 
 

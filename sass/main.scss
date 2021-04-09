@@ -249,7 +249,7 @@
 }
 
 .contact{
-    background-color: $pinkColor;
+    background-color: rgba(235, 61, 98, 0.911);
     &__main-container--paddings{
         margin-top : 50px !important;
         // border: 5px solid black !important;
@@ -276,6 +276,7 @@
         color : rgb(248, 248, 248);
         font-size: 3rem;
         margin-bottom: 5px;
+        cursor: pointer;
     }
     .info__paragrgaph--font{
         color : rgb(248, 248, 248);
@@ -283,28 +284,11 @@
         font-size: 2rem;
         margin-bottom: 3px;
     }
-    // background-color: rgb(253, 242, 244);
-
-    // .field input, .field textarea{
-    //     border-radius: 0px !important;
-    // }
-    // .text__area--margin{
-    //     margin-bottom: 100%;
-    // }
-    // &__details{
-    //     background-color: white;
-    //     padding: 30px 20px;
-    //     height: 100%;
-    //     box-shadow: 0px 0px 10px -8px black;
-
-    // }
-
-
-
 }
 
 .footer{
     position: relative;
+    padding-top: 0px !important;
     &--background-color{
         background-color: $blackColorBackground;
         opacity: 0.99;
@@ -425,9 +409,4 @@
     z-index: 10;
     opacity: .7;
     transition: all 0.5s ease-in-out .3s  ;
-}
-
-
-.border{
-    border: 1px solid white;
 }
