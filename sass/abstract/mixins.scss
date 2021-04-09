@@ -25,3 +25,13 @@
     // // border: .5px solid $blueColor ;
     // box-shadow: 2px 2px 0px 0px  $pinkColor;
 }
+
+@mixin sectionContainer(){
+    width: $sizeMain !important;
+    margin: $marginTopBottomMain $marginRight !important;
+}
+
+@mixin flexCenter(){
+    display: flex !important;
+    align-items: center;
+}

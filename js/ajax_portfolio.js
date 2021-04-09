@@ -53,11 +53,9 @@ fetch('http://localhost:3000/portfolios')
                 portfolioCardMainContainer.appendChild(textBox);
         
                 portfolioCard.appendChild(portfolioCardMainContainer);
-                // console.log(portfolioCard);
         
                 portfolioRow1.appendChild(portfolioCard);
             }
-            // console.log(portfolioRow1)
         }
 
         let portfolio2;
@@ -101,14 +99,10 @@ fetch('http://localhost:3000/portfolios')
         
                 textBox.appendChild(link);
                 textBox.appendChild(description);
-        
+    
                 portfolioCardMainContainer.appendChild(textBox);
-        
-                portfolioCard.appendChild(portfolioCardMainContainer);
-                // console.log(portfolioCard);
-        
+                portfolioCard.appendChild(portfolioCardMainContainer);   
                 portfolioRow2.appendChild(portfolioCard);
-                // console.log(portfolioRow1)
             }
         }
     }
