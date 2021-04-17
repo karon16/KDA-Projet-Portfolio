@@ -43,6 +43,8 @@ navSlide();
 
 
 const faders = document.querySelectorAll('.fadeIn');
+const links = document.querySelectorAll('.nav-link')
+
 const appearOptions = {
     root : null,
     threshold :0,
@@ -68,4 +70,5 @@ const appearOnScroll = new IntersectionObserver
 
 faders.forEach(fader =>{
     appearOnScroll.observe(fader);
-});
+})
+;

@@ -225,35 +225,46 @@
         position: relative;
         // border: 2px solid $pinkColor;
     }
+    .card--hiddenLink{
+        
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        visibility : hidden;
+        position: absolute;
+        top : 45%;
+        left : 20%;
+        opacity: 0.7;
+    }
+    .card--hiddenLink::after{
+        content: '';
+        margin : 10px 25%;
+        width: 50%;
+        height: .35rem;
+        @include linkColors;
+        display: block;
+        // position: absolute;
+    }
+
     &__card--animation:hover{
         background: rgba(255, 255, 255, 0.2);
         transition: all 0.3s ease-out;
-        // border: 2px solid $blueColor;
         color : black;
-        // box-shadow: 0px 0px 20px -5px  $pinkColor;
-        transform: scale(1.05);
+        transform: scale(1.04);
+
         .fas, .third__title--size, .paragraphs--font-size{
             color: $pinkColor;
-        visibility : hidden;
-
-
+            visibility : hidden;
         }
+
+        .card--hiddenLink{
+            visibility : visible;
+            opacity: 1;
+        }
+
     }
 
-    &__card--animation::after{
-        content : 'Lire un Article sur le sujet';
-        position: absolute;
-        top : 45%;
-        left : 25%;
-        font-size: 2rem;
-        font-weight: bold;
-        // display :none;
-        visibility : hidden;
-    }
-    &__card--animation:hover::after{
-        visibility : visible;
-        color: #fff;
-    }
+    
     .fas{
         font-size: 5rem;
     }
@@ -345,8 +356,8 @@
 
         .footer__logo div:hover{
             opacity: 1;
-            // transform: scale(2);
-            transform: translateY(-10%);
+            transform: scale(1.1);
+            // transform: translateY(-10%);
             
             transition: all 0.2s ease-in;
             

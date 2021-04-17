@@ -31,8 +31,9 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
         paragraph.textContent = `${specialization.paragraph}`;
 
         const hiddenLink = document.createElement('a');
-        hiddenLink.setAttribute('src', `${specialization.lien}`);
+        hiddenLink.setAttribute('href', `${specialization.lien}`);
         hiddenLink.textContent = `Lire un article sur ${specialization.source}`;
+        hiddenLink.classList.add("card--hiddenLink");
 
         // adding element
         iconContainer.appendChild(icon);

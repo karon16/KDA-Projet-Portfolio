@@ -474,28 +474,37 @@ body {
   padding: 20px 20px;
   position: relative;
 }
+.specialisation .card--hiddenLink {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  visibility: hidden;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  opacity: 0.7;
+}
+.specialisation .card--hiddenLink::after {
+  content: "";
+  margin: 10px 25%;
+  width: 50%;
+  height: 0.35rem;
+  background-color: #E43583;
+  display: block;
+}
 .specialisation__card--animation:hover {
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-out;
   color: black;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 .specialisation__card--animation:hover .fas, .specialisation__card--animation:hover .third__title--size, .specialisation__card--animation:hover .paragraphs--font-size {
   color: #E43583;
   visibility: hidden;
 }
-.specialisation__card--animation::after {
-  content: "Lire un Article sur le sujet";
-  position: absolute;
-  top: 45%;
-  left: 25%;
-  font-size: 2rem;
-  font-weight: bold;
-  visibility: hidden;
-}
-.specialisation__card--animation:hover::after {
+.specialisation__card--animation:hover .card--hiddenLink {
   visibility: visible;
-  color: #fff;
+  opacity: 1;
 }
 .specialisation .fas {
   font-size: 5rem;
@@ -575,7 +584,7 @@ body {
 }
 .footer .footer__logo div:hover {
   opacity: 1;
-  transform: translateY(-10%);
+  transform: scale(1.1);
   transition: all 0.2s ease-in;
 }
 .footer .footer__logo--position {
