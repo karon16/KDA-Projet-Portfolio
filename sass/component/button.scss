@@ -2,6 +2,8 @@
 .btn:visited{
     @include buttonColors;
     @include buttonSize;
+    font-family: $paragraphs ;
+
 }
 
 .btn:hover{
@@ -20,7 +22,7 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bolder;
-    font-family: Roboto ;
+    font-family: $paragraphs ;
 }
 
 .btn-nav:hover{
@@ -34,6 +36,7 @@
 .btn--centered-size{
     text-align: center;
     margin-top: 50px;
+
 }
 
 .btn--inverted-color{

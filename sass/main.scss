@@ -3,6 +3,8 @@
 @import '../sass/base/reset.scss';
 @import '../sass/base/typography.scss';
 @import '../sass/component/button.scss';
+@import '../sass/component/header-animatin.scss';
+@import '../sass/component/slideUpAll.scss';
 
 
 
@@ -50,7 +52,7 @@
         &-current::before{
             content: '';
             width: 100%;
-            height: .5rem;
+            height: .35rem;
             @include linkColors;
             display: block;
             opacity: 1;
@@ -60,16 +62,17 @@
         }
         &::after{
             content: '';
-            width: 100%;
-            height: .5rem;
+            width: 0%;
+            height: .35rem;
             @include linkColors;
             display: block;
-            transition: all 0.4s;
-            opacity: 0;
+            transition: width 0.4s linear;
+            // opacity: 0;
         }
         &:hover::after{
-            opacity: 1;
-            transition: all .1s;
+            width: 100%;
+            // opacity: 1;
+            // transition: all .1s;
         }
     }
 }
@@ -85,10 +88,7 @@
     }
 }
 .hero-section{
-    // padding: 50px auto !important;
-    // margin-top: 9% !important;
-    
-    // border : 1px solid black;
+
 
     &__text, &__image{
         height: auto;
@@ -106,7 +106,7 @@
 .hero__container{
     width: $sizeMain ;
     margin: 0 $marginRight !important;
-    padding: 55px 0
+    padding: 55px 0;
 }
 
 .menu--shadow{
@@ -172,6 +172,7 @@
         background-color: #BFE5F3 ;
         height: 0.6rem;
         width: 100%;
+        position : $relativePosition; 
     }
     
     .progress__bar--settings::-webkit-progress-bar {
@@ -179,12 +180,18 @@
     }
     .progress__bar--settings::-webkit-progress-value {
         background-color : $pinkColor;
-    }
+        animation: animation-bars 5s linear normal;
+        -webkit-animation: animation-bars 5s linear normal;
+}
 
     .progress__bar--settings::-moz-progress-bar{
-        background-color: #BFE5F3;
+        background-color: $pinkColor;
     }
-    
+    .skills__text--flex{
+        display: flex;
+        justify-content: space-between;   
+        margin : 0;
+    }    
 }
 
 .specialisation--backgroundcolor{
@@ -219,15 +226,33 @@
         // border: 2px solid $pinkColor;
     }
     &__card--animation:hover{
-        background: white;
+        background: rgba(255, 255, 255, 0.2);
         transition: all 0.3s ease-out;
         // border: 2px solid $blueColor;
         color : black;
-        // box-shadow: 3px 3px 0px 0px  $pinkColor;
-        .fas{
+        // box-shadow: 0px 0px 20px -5px  $pinkColor;
+        transform: scale(1.05);
+        .fas, .third__title--size, .paragraphs--font-size{
             color: $pinkColor;
+        visibility : hidden;
+
 
         }
+    }
+
+    &__card--animation::after{
+        content : 'Lire un Article sur le sujet';
+        position: absolute;
+        top : 45%;
+        left : 25%;
+        font-size: 2rem;
+        font-weight: bold;
+        // display :none;
+        visibility : hidden;
+    }
+    &__card--animation:hover::after{
+        visibility : visible;
+        color: #fff;
     }
     .fas{
         font-size: 5rem;
@@ -245,7 +270,7 @@
 }
 
 .contact{
-    background-color: rgba(235, 61, 98, 0.911);
+    background-color: $pinkColor;
     &__main-container--paddings{
         margin-top : 50px !important;
         // border: 5px solid black !important;
@@ -281,7 +306,7 @@
 
 .footer{
     position: relative;
-    padding-top: 0px !important;
+    // padding-top: 0px !important;
     &--background-color{
         background-color: $blackColorBackground;
         opacity: 0.99;
@@ -307,15 +332,27 @@
         color: #fff;
         text-align: center;
     }
+
+    .footer__logo div{
+        opacity: 0.5;
+        
+    }
     .iconify{
         font-size:5rem;
         color: white;
-        opacity: 0.5;
     }
-    .iconify:hover{
-        opacity: 1;
-        transition: all 0.2s linear;
+    // .footer__logo--position div:hover{
+
+        .footer__logo div:hover{
+            opacity: 1;
+            // transform: scale(2);
+            transform: translateY(-10%);
+            
+            transition: all 0.2s ease-in;
+            
+        // }
     }
+    
 
     .footer__logo--position{
         display: flex;
@@ -402,3 +439,6 @@
     opacity: .7;
     transition: all 0.5s ease-in-out .3s  ;
 }
+
+
+

@@ -9,7 +9,6 @@ const portfolioCard = document.getElementById('hidden-card');
 const portfolioBtn = document.getElementById('portfolio-btn');
 let btnChange = document.querySelector('.btn--changeable')
 
-// console.log(portfolioCard);
 portfolioBtn.addEventListener('click', (e) =>{
     e.preventDefault();
     portfolioCard.classList.toggle('hidden-card');
@@ -37,15 +36,36 @@ const navSlide = function(){
         link.addEventListener('click', ()=>{
         navigationLinkBox.classList.remove('nav-active');
         mainPage.classList.remove('main-page--blacked');
-
         })
-
     });
-    // navLinks.addEventListener('click', ()=>{
-    //     navigationLinkBox.classList.remove('nav-active');
-    // })
-
 }
-
 navSlide();
 
+
+const faders = document.querySelectorAll('.fadeIn');
+const appearOptions = {
+    root : null,
+    threshold :0,
+    rootMargin : "50px"
+};
+
+const appearOnScroll = new IntersectionObserver
+(function(
+    entries, 
+    appearOnScroll
+    ){
+        entries.forEach(entry =>{
+            if(!entry.isIntersecting){
+                return;
+            }else{
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+                // console.log(entry.target);
+            }
+        });
+
+    }, appearOptions);
+
+faders.forEach(fader =>{
+    appearOnScroll.observe(fader);
+});

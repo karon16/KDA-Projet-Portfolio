@@ -18,11 +18,11 @@ body {
 }
 
 .titles--font-family {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .paragraphs-font-family {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .titles--font-color {
@@ -42,7 +42,7 @@ body {
 }
 
 .paragraphs--font-family {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .titles--font-size {
@@ -74,10 +74,12 @@ body {
   font-size: 2.2rem;
   font-weight: bolder;
   text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
 }
 
 .label--font-family {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #5f5f5f;
 }
 
 .bold--text {
@@ -93,7 +95,7 @@ body {
   content: "";
   position: absolute;
   width: 5%;
-  height: 0.5rem;
+  height: 0.35rem;
   background-color: #E43583;
   display: block;
   margin: 0px 47%;
@@ -104,7 +106,7 @@ body {
   content: "";
   position: absolute;
   width: 5%;
-  height: 0.5rem;
+  height: 0.35rem;
   background-color: white;
   display: block;
   margin: 0px 47%;
@@ -125,6 +127,7 @@ body {
   position: relative;
   font-weight: bold;
   font-size: 1.4rem !important;
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn:hover {
@@ -146,7 +149,7 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bolder;
-  font-family: Roboto;
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn-nav:hover {
@@ -177,6 +180,95 @@ body {
   color: #fff;
   box-shadow: 5px 5px 0px 0px white;
   transition: all 0.2s;
+}
+
+.slideIn--animation {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.slideUp--animation {
+  animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.svg-background--animation {
+  animation: slidesvg 5s ease-out infinite alternate-reverse;
+}
+
+@keyframes slidesvg {
+  from {
+    transform: scale(1.1);
+    transform: translateX(1%);
+  }
+  to {
+    transform: translateX(0%);
+    transform: scale();
+  }
+}
+.svg-shadow--animation, .svg-screen--animation {
+  animation: slidesvg1 5s ease-out infinite alternate-reverse;
+}
+
+@keyframes slidesvg1 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(2%);
+  }
+}
+.svg-pent-tool--animation {
+  animation: slidesvg2 5s ease-out infinite alternate-reverse;
+}
+
+@keyframes slidesvg2 {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(1%);
+  }
+}
+.svg-colorpalette--animation {
+  animation: slidesvg3 5s ease-out infinite alternate-reverse;
+}
+
+@keyframes slidesvg3 {
+  from {
+    transform: translateY(1%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.fadeIn {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 0.7s ease-in 0.2s;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .body-section--paddings {
@@ -226,7 +318,7 @@ body {
 .navigation .nav-link-current::before {
   content: "";
   width: 100%;
-  height: 0.5rem;
+  height: 0.35rem;
   background-color: #E43583;
   display: block;
   opacity: 1;
@@ -236,16 +328,14 @@ body {
 }
 .navigation .nav-link::after {
   content: "";
-  width: 100%;
-  height: 0.5rem;
+  width: 0%;
+  height: 0.35rem;
   background-color: #E43583;
   display: block;
-  transition: all 0.4s;
-  opacity: 0;
+  transition: width 0.4s linear;
 }
 .navigation .nav-link:hover::after {
-  opacity: 1;
-  transition: all 0.1s;
+  width: 100%;
 }
 
 .burger {
@@ -334,15 +424,23 @@ body {
   background-color: #BFE5F3;
   height: 0.6rem;
   width: 100%;
+  position: relative;
 }
 .skills .progress__bar--settings::-webkit-progress-bar {
   background-color: #BFE5F3;
 }
 .skills .progress__bar--settings::-webkit-progress-value {
   background-color: #E43583;
+  animation: animation-bars 5s linear normal;
+  -webkit-animation: animation-bars 5s linear normal;
 }
 .skills .progress__bar--settings::-moz-progress-bar {
-  background-color: #BFE5F3;
+  background-color: #E43583;
+}
+.skills .skills__text--flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .specialisation--backgroundcolor {
@@ -377,12 +475,27 @@ body {
   position: relative;
 }
 .specialisation__card--animation:hover {
-  background: white;
+  background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-out;
   color: black;
+  transform: scale(1.05);
 }
-.specialisation__card--animation:hover .fas {
+.specialisation__card--animation:hover .fas, .specialisation__card--animation:hover .third__title--size, .specialisation__card--animation:hover .paragraphs--font-size {
   color: #E43583;
+  visibility: hidden;
+}
+.specialisation__card--animation::after {
+  content: "Lire un Article sur le sujet";
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  font-size: 2rem;
+  font-weight: bold;
+  visibility: hidden;
+}
+.specialisation__card--animation:hover::after {
+  visibility: visible;
+  color: #fff;
 }
 .specialisation .fas {
   font-size: 5rem;
@@ -396,7 +509,7 @@ body {
 }
 
 .contact {
-  background-color: rgba(235, 61, 98, 0.911);
+  background-color: #E43583;
 }
 .contact__main-container--paddings {
   margin-top: 50px !important;
@@ -429,7 +542,6 @@ body {
 
 .footer {
   position: relative;
-  padding-top: 0px !important;
 }
 .footer--background-color {
   background-color: #282828;
@@ -454,14 +566,17 @@ body {
   color: #fff;
   text-align: center;
 }
+.footer .footer__logo div {
+  opacity: 0.5;
+}
 .footer .iconify {
   font-size: 5rem;
   color: white;
-  opacity: 0.5;
 }
-.footer .iconify:hover {
+.footer .footer__logo div:hover {
   opacity: 1;
-  transition: all 0.2s linear;
+  transform: translateY(-10%);
+  transition: all 0.2s ease-in;
 }
 .footer .footer__logo--position {
   display: flex;

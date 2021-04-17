@@ -30,11 +30,18 @@ fetch('https://my-json-server.typicode.com/karon16/KDA-Projet-Portfolio/speciali
         paragraph.classList.add("paragraphs--font-family", "paragraphs--font-size");
         paragraph.textContent = `${specialization.paragraph}`;
 
+        const hiddenLink = document.createElement('a');
+        hiddenLink.setAttribute('src', `${specialization.lien}`);
+        hiddenLink.textContent = `Lire un article sur ${specialization.source}`;
+
         // adding element
         iconContainer.appendChild(icon);
         specializationContainer.appendChild(iconContainer);
 
+
         specializationContainer.appendChild(title);
+        specializationContainer.appendChild(hiddenLink);
+
         specializationContainer.appendChild(paragraph);
 
         specialisationMainContainer.appendChild(specializationContainer);
