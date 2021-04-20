@@ -93,7 +93,7 @@
 
   "portfolios": [
     {
-      "portfolio1" : [
+      "portfolio" : [
         {
           "id" : 0,
           "image1" : "./img/win-game-paques-logo2.jpg",
@@ -118,7 +118,7 @@
       ]},
 
     {
-      "portfolio2" : [
+      "portfolio" : [
         {
           "id" : 0,
           "image1" : "./img/site-kd.png",
