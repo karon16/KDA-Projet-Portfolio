@@ -53,7 +53,7 @@ function renderCard(card) {
 }
 
 function renderPortfolio(portfolio, portfolioRow) {
-  for (const card of portfolio) {
+  for (const card of portfolio.portfolio) {
     const portfolioCard = renderCard(card);
     portfolioRow.appendChild(portfolioCard);
     console.log(portfolio)
