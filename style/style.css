@@ -280,7 +280,8 @@ body {
   margin: 50px auto !important;
 }
 
-.main-page, .header-section {
+.main-page,
+.header-section {
   position: relative;
 }
 
@@ -297,7 +298,7 @@ body {
   z-index: 3000000000000000000;
 }
 .navigation__link-box {
-  width: 60%;
+  width: 50%;
   display: flex !important;
   align-items: center;
   justify-content: space-between;
@@ -312,7 +313,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .navigation .nav-link:visited, .navigation .nav-link:link {
-  color: #3C3C3B;
+  color: #3c3c3b;
   position: relative;
 }
 .navigation .nav-link-current::before {
@@ -367,7 +368,7 @@ body {
 }
 
 .menu--shadow {
-  box-shadow: 0px 0px 10px -8px black !important;
+  box-shadow: 0px 0px 5px 0px #535353 !important;
   background: white;
 }
 
@@ -421,13 +422,13 @@ body {
   text-transform: uppercase;
 }
 .skills .progress__bar--settings {
-  background-color: #BFE5F3;
+  background-color: #bfe5f3;
   height: 0.6rem;
   width: 100%;
   position: relative;
 }
 .skills .progress__bar--settings::-webkit-progress-bar {
-  background-color: #BFE5F3;
+  background-color: #bfe5f3;
 }
 .skills .progress__bar--settings::-webkit-progress-value {
   background-color: #E43583;
@@ -498,7 +499,9 @@ body {
   color: black;
   transform: scale(1.04);
 }
-.specialisation__card--animation:hover .fas, .specialisation__card--animation:hover .third__title--size, .specialisation__card--animation:hover .paragraphs--font-size {
+.specialisation__card--animation:hover .fas,
+.specialisation__card--animation:hover .third__title--size,
+.specialisation__card--animation:hover .paragraphs--font-size {
   color: #E43583;
   visibility: hidden;
 }
